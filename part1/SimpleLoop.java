@@ -7,7 +7,13 @@ class SimpleLoop
          done without a loop, but the point is to
          practice the syntax for a loop.
       */
-
-      return 0;
+        int count = low;
+        int increase_num = low + 1;
+        while (increase_num < (high)) {
+        	count = (count + increase_num);
+        	increase_num++;
+        }
+        count = (count + high);
+    	return count;
    }
 }

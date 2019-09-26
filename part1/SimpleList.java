@@ -6,6 +6,10 @@ class SimpleList
    public static List<Integer> squareAll(List<Integer> values)
    {
       List<Integer> newValues = new LinkedList<Integer>();
+      for (int val : values) {
+         int square_val = (int) Math.round(Math.pow(val, 2));
+         newValues.add(square_val);
+      }
 
       /* TO DO: The output list, newValues, should hold as
          its elements the square of the corresponding element
