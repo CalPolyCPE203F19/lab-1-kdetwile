@@ -204,7 +204,7 @@ public class TestCases
    {
       Point p = new Point(-1, -1);
       double rads = p.getAngle();
-      assertEquals(3.9269908136, rads, DELTA);
+      assertEquals((3.9269908136 - 2 * Math.PI), rads, DELTA);
    }
 
    @Test
@@ -212,7 +212,7 @@ public class TestCases
    {
       Point p = new Point(2, -4);
       double rads = p.getAngle();
-      assertEquals(5.1760365, rads, DELTA);
+      assertEquals((5.1760365 - 2 * Math.PI), rads, DELTA);
 
    }
 
