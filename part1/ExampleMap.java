@@ -9,7 +9,7 @@ class ExampleMap
       Map<String, List<Course>> courseListsByStudentName, int unitThreshold)
    {
       List<String> overEnrolledStudents = new LinkedList<>();
-      List<String> map_keys = courseListsByStudentName.keySet();
+      Set<String> map_keys = courseListsByStudentName.keySet();
       for (String val : map_keys) {
          List<Course> course_list = courseListsByStudentName.get(val);
          //go through list of courses and count up of the units (course.getUnits())
