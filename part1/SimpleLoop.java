@@ -9,10 +9,8 @@ class SimpleLoop
       */
 
         int count = 0;
-        for (int i = low; i < high; i++)
-        {
-        	count = i + count;
-        }
-        return (count + high);
+        for (int i = low; i <= high; i++)
+        	count += i;
+        return count;
    }
 }
