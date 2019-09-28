@@ -13,6 +13,6 @@ class SimpleLoop
         {
         	count = i + count;
         }
-        return (count + high)
+        return (count + high);
    }
 }
