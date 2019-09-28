@@ -27,9 +27,9 @@ public class Point
 	public Point rotate90() 
 	{ 
 		double temp = x;
-		x = -1 * y;
-		y = temp;
-		Point p = new Point(x, y);
+		double new_x = -1 * y;
+		double new_y = temp;
+		Point p = new Point(new_x, new_y);
 		return p;
 	}
 }
